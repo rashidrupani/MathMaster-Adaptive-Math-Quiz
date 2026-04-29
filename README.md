@@ -1,4 +1,4 @@
-# 🧮 MathMaster – Adaptive Math Quiz
+# 🧮 Math Master – Adaptive Math Quiz
 
 A fully functional, browser-based MCQ quiz application for math practice.  
 No backend, no database – everything runs locally in your browser.
@@ -40,3 +40,49 @@ No internet connection needed after download.
 - **Vanilla JavaScript** – all logic, question generation, state management
 
 ## 📂 Project Structure
+math-master-quiz/
+├── index.html (single file containing everything)
+└── README.md (this file)
+
+
+
+## 🧠 Question Generation
+
+All questions are generated **dynamically** using JavaScript.  
+Each category has its own generator that respects the selected class level.  
+A unique hashing system prevents question repetition within a single quiz session.
+
+### Example Solutions (Teacher‑Style)
+
+- **Probability:**  
+  *Step 1: Identify favourable outcomes. Step 2: Count total outcomes. Step 3: Write fraction. Step 4: Simplify.*
+
+- **Word Problems:**  
+  *Step‑by‑step reasoning, formula application, and final calculation.*
+
+- **Symmetry:**  
+  *Explanation of lines of symmetry + visual SVG diagram.*
+
+## 📱 Responsive Design
+
+The layout adapts seamlessly to:
+- Desktop (≥1024px)
+- Tablet (768px – 1024px)
+- Mobile (≤640px) – stacked score bar, larger touch targets.
+
+## 🔧 Customization
+
+You can easily:
+- Add more categories to the `Generators` object.
+- Adjust timer duration (default 60s) in `loadQuestionUI()`.
+- Modify difficulty scaling inside each generator.
+
+## 📄 License
+
+MIT – free to use, modify, and distribute.
+
+## 🙌 Acknowledgements
+
+Built as a pure front‑end project to demonstrate advanced JavaScript, dynamic UI, and mathematical pedagogy.
+
+**Enjoy practicing math!** 🎯
